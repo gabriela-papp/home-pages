@@ -74,14 +74,14 @@
   border-radius: 20px;
 }
 .tasks span {
-  background: #fcb1ce;
+  background: radial-gradient(farthest-side at 35% 95%, #a940f5, #63ade6);
   border-radius: 15px;
   padding: 5px 9px;
   color: #d982ac;
+  box-shadow: 8px 8px 17px #d982ac;
 }
 .tasks span:hover {
   color: #403e3e;
-  background: #d982ac;
 }
 .tasks-items {
   padding-top: 20px;
@@ -114,6 +114,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
+  box-shadow: 10px 8px 15px #d982ac;
+  border-radius: 3px;
 }
 .icons {
   padding-top: 20px;
@@ -128,6 +130,7 @@
   cursor: pointer;
   transition: transform 0.5s;
   border-radius: 20px;
+  box-shadow: 10px 8px 15px #d982ac;
 }
 .links img:hover {
   transform: scale(1.1);
@@ -148,4 +151,30 @@
     rgba(255, 255, 255, 0.4)
   );
   border-radius: 25px;
+}
+.card {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.4)
+  );
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card img {
+  width: 70px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.card p {
+  font-size: 12px;
+}
+.card h4 {
+  margin-top: 10px;
 }

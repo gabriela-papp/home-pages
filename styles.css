@@ -3,11 +3,12 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  color: #403e3e;
 }
 .container {
   background-image: radial-gradient(farthest-side at 35% 35%, #fcb1ce, #e8c8f7);
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 .cards {
   display: flex;
@@ -17,7 +18,7 @@
 .card-1 {
   background: white;
   width: 25%;
-  height: 500px;
+  height: auto;
   color: #403e3e;
   font-weight: 600;
   background: linear-gradient(
@@ -34,6 +35,7 @@
   padding-left: 30px;
   padding-top: 10px;
 }
+
 .calendar {
   width: 95%;
   height: 40px;
@@ -77,6 +79,10 @@
   padding: 5px 9px;
   color: #d982ac;
 }
+.tasks span:hover {
+  color: #403e3e;
+  background: #d982ac;
+}
 .tasks-items {
   padding-top: 20px;
 }
@@ -92,7 +98,7 @@
 .card-2 {
   background: white;
   width: 25%;
-  height: 500px;
+  height: auto;
   background: linear-gradient(
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.4)
@@ -109,10 +115,34 @@
   margin-right: auto;
   margin-top: 25px;
 }
+.icons {
+  padding-top: 20px;
+}
+.links {
+  display: flex;
+}
+.links img {
+  height: 55px;
+  width: 85px;
+  margin: 0 50px 20px 40px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  border-radius: 20px;
+}
+.links img:hover {
+  transform: scale(1.1);
+}
+.links h2 {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.links h2:hover {
+  color: #d982ac;
+}
 .card-3 {
   background: white;
   width: 25%;
-  height: 500px;
+  height: auto;
   background: linear-gradient(
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.4)
